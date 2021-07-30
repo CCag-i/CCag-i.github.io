@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>js——ES6语法</title>
+    <title>js学习——ES6语法</title>
     <url>/2021/07/20/js%E2%80%94%E2%80%94ES6%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h1 id="ES6语法"><a href="#ES6语法" class="headerlink" title="ES6语法"></a>ES6语法</h1><h3 id="模板字面量"><a href="#模板字面量" class="headerlink" title="模板字面量"></a>模板字面量</h3><p>使用``括住字符串，可实现多行字符串</p>
 <h3 id="字符串占位符"><a href="#字符串占位符" class="headerlink" title="字符串占位符"></a>字符串占位符</h3><p><code>$&#123;变量名&#125;</code> 用法与插值表达式类似</p>
