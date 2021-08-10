@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>js学习——ES6语法</title>
+    <title>我的第一篇博客</title>
+    <url>/2021/07/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>我开始使用博客啦！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>JS——ES6语法</title>
     <url>/2021/07/20/js%E2%80%94%E2%80%94ES6%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<h1 id="ES6语法"><a href="#ES6语法" class="headerlink" title="ES6语法"></a>ES6语法</h1><h3 id="模板字面量"><a href="#模板字面量" class="headerlink" title="模板字面量"></a>模板字面量</h3><p>使用``括住字符串，可实现多行字符串</p>
 <h3 id="字符串占位符"><a href="#字符串占位符" class="headerlink" title="字符串占位符"></a>字符串占位符</h3><p><code>$&#123;变量名&#125;</code> 用法与插值表达式类似</p>
@@ -63,9 +69,442 @@
       </tags>
   </entry>
   <entry>
-    <title>我的第一篇博客</title>
-    <url>/2021/07/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>我开始使用博客啦！</p>
-]]></content>
+    <title>MySQL——MySQL基本操作</title>
+    <url>/2021/08/10/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h1 id="数据库基本介绍"><a href="#数据库基本介绍" class="headerlink" title="数据库基本介绍"></a>数据库基本介绍</h1><ul>
+<li>数据库基本知识</li>
+<li>数据库分类</li>
+<li>SQL简介</li>
+<li>MySQL访问<h3 id="1、数据库基本知识"><a href="#1、数据库基本知识" class="headerlink" title="1、数据库基本知识"></a>1、数据库基本知识</h3><blockquote>
+<p>目标：了解数据库的概念和数据库的作用</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>概念</p>
+</blockquote>
+<p><strong>数据库</strong>: database，是一种存储数据的仓库</p>
+<ul>
+<li>数据库是根据数据结构组织、存储和管理数据</li>
+<li>数据库能够长期、高效的管理和存储数据</li>
+<li>数据库的目的就是能够存储（写）和提供（读）数据</li>
+</ul>
+<h3 id="2、数据库分类"><a href="#2、数据库分类" class="headerlink" title="2、数据库分类"></a>2、数据库分类</h3><blockquote>
+<p>目标：了解数据库的分类模式，以及分类的依据</p>
+</blockquote>
+<blockquote>
+<p>概念</p>
+</blockquote>
+<p><strong>数据库分类</strong>：根据数据库的架构和数据组织原理进行分类</p>
+<p>1、早期根据数据库的组织数据的存储模型分类</p>
+<ul>
+<li>层次数据库：基于层次的数据结构（数据分层）</li>
+<li>网状数据库：基于网状的数据结构（数据网络）</li>
+<li>关系数据库：基于关系模型的数据结构（二维表）<br>2、现在较多根据实际数据管理模型分类（存储介质）</li>
+<li>关系型数据库：基于关系模型的数据结构（二维表）通常存储在磁盘</li>
+<li>非关系型数据库：没有具体模型的数据结构（键值对）通常存储在内存</li>
+</ul>
+<h3 id="3、关系型数据库"><a href="#3、关系型数据库" class="headerlink" title="3、关系型数据库"></a>3、关系型数据库</h3><blockquote>
+<p>目标：了解关系型数据库的模型逻辑，了解当前流行的关系型数据库产品</p>
+</blockquote>
+<blockquote>
+<p>概念</p>
+</blockquote>
+<p><strong>关系型数据库</strong>：是一种建立在关系模型上的数据库</p>
+<ul>
+<li>关系模型<ul>
+<li>关系数据结构（存储）</li>
+<li>关系操作集合（操作）</li>
+<li>关系完整性约束（约束）</li>
+</ul>
+</li>
+<li>关系型数据库存储在磁盘中（永久性存储）</li>
+<li>关系型数据库系统（DBS）模型有四层结构<ul>
+<li>数据库管理系统（DBMS）：管理系统运行（DataBase Management System）</li>
+<li>数据库（DB）：数据存储的管理者（小管理，受DBMS管理）</li>
+<li>数据表（Table）：数据关系管理者</li>
+<li>数据字段（Field）：实际数据存储者</li>
+</ul>
+</li>
+<li>关系型数据库产品<ul>
+<li>大型：Oracle、DB2</li>
+<li>中型：MySQL、SqlServer</li>
+<li>小型：Sybase、Access</li>
+</ul>
+</li>
+</ul>
+<h3 id="4、非关系型数据库"><a href="#4、非关系型数据库" class="headerlink" title="4、非关系型数据库"></a>4、非关系型数据库</h3><blockquote>
+<p>目标：了解非关系型数据库的概念和一些主流产品</p>
+</blockquote>
+<blockquote>
+<p>概念</p>
+</blockquote>
+<p><strong>非关系型数据库</strong>：NoSQL（Not only SQL），不仅仅是关系型数据库</p>
+<ul>
+<li>所有不是关系型数据库的统称</li>
+<li>数据存储模型不是二维表，而是键值对</li>
+<li>存储的位置通常是内存（效率高）</li>
+<li>不能永久性存储（需要定时存到关系型数据库里）</li>
+<li>常见的非关系型数据库产品<ul>
+<li>MongoDB</li>
+<li>Redis</li>
+<li>Memcached</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>对比</p>
+</blockquote>
+<p>NoSQL通常是与关系型数据库配合使用的，他们彼此是一种互补关系</p>
+<ul>
+<li>NoSQL运行在内存，解决效率问题<ul>
+<li>I/O问题</li>
+<li>效率问题</li>
+</ul>
+</li>
+<li>MySQL运行在磁盘，解决稳定问题<ul>
+<li>安全问题（永久存储）</li>
+<li>稳定</li>
+</ul>
+</li>
+</ul>
+<h3 id="5、SQL基本介绍"><a href="#5、SQL基本介绍" class="headerlink" title="5、SQL基本介绍"></a>5、SQL基本介绍</h3><blockquote>
+<p>目标：了解SQL的作用和SQL的基本分类</p>
+</blockquote>
+<blockquote>
+<p>概念</p>
+</blockquote>
+<p><strong>SQL</strong>：Structured Query Language，结构化查询语言，是一种针对关系型数据库特殊标准化的编程语言</p>
+<ul>
+<li>SQL是一种编程语言</li>
+<li>能够实现用户数据库查询和程序设计</li>
+<li>SQL根据操作不同，分为基类<ul>
+<li>DQL：Data Query Language，数据查询语言，用于查询和检索数据</li>
+<li>DML：Data ManiPulation Language，数据操作语言，用于数据的写操作（增删改）</li>
+<li>DDL：Data Definition Language，数据定义语言，用于创建数据结构</li>
+<li>DCL：Data Control Language,数据控制语言，用于用户权限管理</li>
+<li>TPL：Transaction Process Language，事物处理语言，辅助DML进行事务操作（因此也归属于DML）</li>
+</ul>
+</li>
+</ul>
+<h3 id="6、MySQL基本介绍"><a href="#6、MySQL基本介绍" class="headerlink" title="6、MySQL基本介绍"></a>6、MySQL基本介绍</h3><blockquote>
+<p>目标：了解MySQL产品的软件结构和访问原理</p>
+</blockquote>
+<blockquote>
+<p>概念</p>
+</blockquote>
+<p><strong>MySQL</strong>：是瑞典AB公司下的一款关系型数据库</p>
+<ul>
+<li>MySQL当前属于甲骨文公司（AB-&gt;Sun-&gt;Oracle）</li>
+<li>MySQL开源免费（部分存储引擎）</li>
+<li>MySQL是一种C/S结构软件，因此需要MySQL的客户端来访问服务端（数据管理）<ul>
+<li>mysqld.exe：服务端</li>
+<li>mysql.exe：客户端</li>
+</ul>
+</li>
+<li>MySQL使用SQL指令对数据库进行操作</li>
+</ul>
+<h3 id="7、MySQL访问"><a href="#7、MySQL访问" class="headerlink" title="7、MySQL访问"></a>7、MySQL访问</h3><blockquote>
+<p>目标：掌握MySQL客户端访问服务端的基本操作，了解MySQL退出意义和操作</p>
+</blockquote>
+<blockquote>
+<p>概念</p>
+</blockquote>
+<p><strong>MySQL访问</strong>：就是客户端连接上服务端，然后实现数据操作的过程</p>
+<ul>
+<li>客户端访问服务端<ul>
+<li>利用Windows控制台访问（MySQL客户端）</li>
+<li>利用数据库管理工具（Navicat）</li>
+</ul>
+</li>
+<li>客户端需要连接认证<ul>
+<li>-h：主机地址（本机localhost可以省略）</li>
+<li>-P：端口号（默认3306可以省略）</li>
+<li>-u：用户名</li>
+<li>-p：用户密码</li>
+</ul>
+</li>
+<li>客户端连接上服务端就表示占用了一个资源，可以进行对应权限的操作<ul>
+<li>MySQL数据库连接资源有限：单个服务器最多16384个 </li>
+<li>连接资源不够了其他访问就要排队等待</li>
+<li>用完尽可能释放资源</li>
+</ul>
+</li>
+<li>客户端退出服务端<ul>
+<li>\q</li>
+<li>quit</li>
+<li>exit</li>
+</ul>
+</li>
+</ul>
+<h1 id="MySQL基本操作"><a href="#MySQL基本操作" class="headerlink" title="MySQL基本操作"></a>MySQL基本操作</h1><ul>
+<li>SQL基本语法</li>
+<li>SQL库操作</li>
+<li>SQL表操作</li>
+<li>SQL数据操作</li>
+</ul>
+<h2 id="一、SQL语法规则"><a href="#一、SQL语法规则" class="headerlink" title="一、SQL语法规则"></a>一、SQL语法规则</h2><blockquote>
+<p>目标：了解SQL的基本语法规则</p>
+</blockquote>
+<blockquote>
+<p>概念</p>
+</blockquote>
+<p><strong>SQL语法规则</strong>：SQL是一种结构化编程语言</p>
+<ul>
+<li>基础SQL指令通常是以行为单位</li>
+<li>SQL指令需要语句结束符，默认是英文分好：<code>;</code>、\g、\G<ul>
+<li>\G：主要用于查询数据，立体展示结果</li>
+</ul>
+</li>
+<li>SQL指令类似自然语言</li>
+<li>编写的SQL中如果用到了关键字或保留字，需要使用反引号``来包裹，让系统忽略</li>
+</ul>
+<blockquote>
+<p>示例</p>
+</blockquote>
+<p>1、结构创建</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create 结构类型 结构名 结构描述;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2、显示结构</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#显示结构</span><br><span class="line">show 结构类型（复数）;</span><br><span class="line"></span><br><span class="line">#显示结构创建详情</span><br><span class="line">show create 结构类型 结构名</span><br></pre></td></tr></table></figure>
+
+
+
+<p>3、数据操作（数据表）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#新增数据</span><br><span class="line">insert into 表名 values</span><br><span class="line"></span><br><span class="line">#查看数据</span><br><span class="line">select from 表名</span><br><span class="line"></span><br><span class="line">#更新数据</span><br><span class="line">update 表名 set</span><br><span class="line"></span><br><span class="line">#删除数据</span><br><span class="line">delete from 表名</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="二、SQL库操作"><a href="#二、SQL库操作" class="headerlink" title="二、SQL库操作"></a>二、SQL库操作</h2><blockquote>
+<p>目标：掌握数据库相关SQL指令</p>
+</blockquote>
+<ul>
+<li>创建数据库</li>
+<li>显示数据库</li>
+<li>使用数据库</li>
+<li>修改数据库</li>
+<li>删除数据库</li>
+</ul>
+<h3 id="1、创建数据库"><a href="#1、创建数据库" class="headerlink" title="1、创建数据库"></a>1、创建数据库</h3><blockquote>
+<p>概念</p>
+</blockquote>
+<p><strong>创建数据库</strong>：根据项目需求创建一个存储数据的仓库</p>
+<ul>
+<li>使用create database 数据库名字创建<ul>
+<li>数据库层面可以指定字符集：charset/character set</li>
+<li>数据库层面可以指定校对集：collate</li>
+</ul>
+</li>
+<li>创建数据库会在磁盘指定存放处产生一个文件夹</li>
+<li>创建语法<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create database 数据库名字 [数据库选项]</span><br></pre></td></tr></table></figure></li>
+</ul>
+<blockquote>
+<p>示例</p>
+</blockquote>
+<p>1、创建一个指定名字的数据库</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create database db_1;</span><br></pre></td></tr></table></figure>
+<p>2、创建一个指定字符集的数据库</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create database db_2 charset utf8MB4;</span><br></pre></td></tr></table></figure>
+<p>3、创建一个指定校对集的数据库</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create database db_3 charset utf8MB4 collate utf8mb4_general_ci;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2、显示数据库"><a href="#2、显示数据库" class="headerlink" title="2、显示数据库"></a>2、显示数据库</h3><blockquote>
+<p>概念 </p>
+</blockquote>
+<p><strong>显示数据库</strong>：通过客户端指令来查看已有数据库</p>
+<ul>
+<li>数据库的查看是根据用户权限限定的</li>
+<li>数据库的查看分为两种查看方式：<ul>
+<li>查看全部数据库</li>
+<li>查看数据库创建指令</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>示例</p>
+</blockquote>
+<p>1、显示所有数据库</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show databases;</span><br></pre></td></tr></table></figure>
+<p>2、显示数据库创建指令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show create database db_1;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3、使用数据库"><a href="#3、使用数据库" class="headerlink" title="3、使用数据库"></a>3、使用数据库</h3><blockquote>
+<p>概念</p>
+</blockquote>
+<p><strong>使用数据库</strong>：指在进行具体SQL指令之前，让系统知道操作针对的是哪个数据库</p>
+<ul>
+<li>数据库的操作通常是针对数据表或者数据</li>
+<li>通过使用数据库可以让后续指令默认针对具体数据库环境</li>
+<li>使用数据库语法：use 数据库名字;</li>
+</ul>
+<blockquote>
+<p>实例</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">use db_1;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4、修改数据库"><a href="#4、修改数据库" class="headerlink" title="4、修改数据库"></a>4、修改数据库</h3><blockquote>
+<p>概念</p>
+</blockquote>
+<p><strong>修改数据库</strong>：修改数据库的相关库选项</p>
+<ul>
+<li>数据库名字不可修改（老版本可以）<ul>
+<li>先新增</li>
+<li>后迁移</li>
+<li>最后删除</li>
+</ul>
+</li>
+<li>数据库修改分为两个部分<ul>
+<li>字符集</li>
+<li>校对集</li>
+</ul>
+</li>
+<li>数据库修改指令（与创建指令差不多）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alter database 数据库名字 库选项;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="5、删除数据库"><a href="#5、删除数据库" class="headerlink" title="5、删除数据库"></a>5、删除数据库</h3><blockquote>
+<p>概念</p>
+</blockquote>
+<p><strong>删除数据库</strong>：将当前已有数据库删除</p>
+<ul>
+<li>删除数据库会删除数据库内所有的表和数据</li>
+<li>删除数据库操作要慎重（删前备份）</li>
+<li>删除数据库后，对应的存储文件夹就会消失</li>
+<li>删除语法<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">drop database 数据库名字;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="三、SQL表（字段）操作"><a href="#三、SQL表（字段）操作" class="headerlink" title="三、SQL表（字段）操作"></a>三、SQL表（字段）操作</h2><blockquote>
+<p>目标：掌握数据库和字段的相关操作指令，熟练运用这些指令完成数据表的增删改查</p>
+</blockquote>
+<ul>
+<li><p>创建数据表</p>
+</li>
+<li><p>显示数据表</p>
+</li>
+<li><p>查看表结构</p>
+</li>
+<li><p>更改数据表</p>
+</li>
+<li><p>更改字段</p>
+</li>
+<li><p>删除数据表</p>
+</li>
+</ul>
+<h3 id="1、创建数据表"><a href="#1、创建数据表" class="headerlink" title="1、创建数据表"></a>1、创建数据表</h3><blockquote>
+<p>目标：了解数据表创建的语法，掌握创建规则</p>
+</blockquote>
+<blockquote>
+<p>概念</p>
+</blockquote>
+<p><strong>创建数据表</strong>：根据雨雾需求，确定数据表的字段信息，然后创建表结构</p>
+<ul>
+<li>表与字段不分家，相辅相成</li>
+<li>表的创建需要指定存储的数据库<ul>
+<li>明确指定数据库：<code>数据库.表名</code></li>
+<li>先使用数据库：<code>use 数据库名字</code></li>
+</ul>
+</li>
+<li>字段至少需要指定名字、类型</li>
+<li>数据库表不限定字段数量<ul>
+<li>每个字段间使用逗号<code>,</code>分隔</li>
+<li>最后一个字段不需要逗号</li>
+</ul>
+</li>
+<li>表可以指定表选项（都有默认值）<ul>
+<li>存储引擎：engine[=]具体存储引擎</li>
+<li>字符集：[default]charset具体字符集（继承数据库）</li>
+<li>校对集：collate（继承数据库）</li>
+</ul>
+</li>
+<li>表创建语法<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create table [数据库名.]表名(</span><br><span class="line">	字段名 字段类型,</span><br><span class="line">	...</span><br><span class="line">	字段名 字段类型</span><br><span class="line">)表选项;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<blockquote>
+<p>示例</p>
+</blockquote>
+<p>1、创建简单数据表（指定数据库创建数据表）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create table db_2.t_1(</span><br><span class="line">	name varchar(50)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2、创建数据表——多字段</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">use db_2;</span><br><span class="line">create table t_2(</span><br><span class="line">	name varchar(50),</span><br><span class="line">	age int,</span><br><span class="line">	gender varchar(10)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+
+
+<p>3、创建数据表——表选项</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create table t_3(</span><br><span class="line">	name varchar(50)</span><br><span class="line">)engine Innodb charset utf8MB4;</span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>扩展：存储引擎是指数据存储和管理的方式，MySQL中提供了多种存储引擎，一般使用默认存储引擎</p>
+<ul>
+<li><p>InnoDB</p>
+<ul>
+<li>默认存储引擎</li>
+<li>支持事物处理和外键</li>
+<li>数据统一管理</li>
+</ul>
+</li>
+<li><p>MyIsam</p>
+<ul>
+<li>支持事物和外键</li>
+<li>结构、索引独立管理</li>
+<li>L5.6以后不再维护</li>
+</ul>
+</li>
+</ul>
+<p>扩展：如果想创建一个与已有表一样的数据表，MySQL提供了一种便捷的复制模式</p>
+<ul>
+<li>create teble 表名 like 数据库名字.表名</li>
+</ul>
+</blockquote>
+<h3 id="2、显示数据表"><a href="#2、显示数据表" class="headerlink" title="2、显示数据表"></a>2、显示数据表</h3><blockquote>
+<p>目的：了解如何查看数据表结构</p>
+</blockquote>
+<blockquote>
+<p>概念</p>
+</blockquote>
+<p><strong>显示数据表</strong>：客户端通过指令显示已有的数据表</p>
+<ul>
+<li>数据表的显示跟用户权限有关</li>
+<li>显示数据表有两种方式<ul>
+<li>显示所有数据表</li>
+<li>显示具体数据表的创建指令</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>示例</p>
+</blockquote>
+<p>1、显示所有数据表——当前数据库下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show tables;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2、显示所有数据表——指定数据库</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show tables from db_3;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>3、显示部分关关联数据表——匹配</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show table like &#x27;%like&#x27;; #%表示匹配多个字符  _表示匹配一个字符</span><br></pre></td></tr></table></figure>
+
+
+
+<p>3、显示数据表的创建指令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">show create table t_1;   #看到的结果未必一定是真实创建的指令（系统会加工）</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>web前端</tag>
+        <tag>MySQL</tag>
+      </tags>
   </entry>
 </search>
